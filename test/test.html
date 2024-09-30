@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smooth Scroll with Ease-Out</title>
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      height: 100%;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      transition: transform 1.2s ease-out; /* Smoother transition here */
+    }
+
+    .section {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3rem;
+    }
+
+    .section:nth-child(odd) {
+      background-color: #f0f0f0;
+    }
+
+    .section:nth-child(even) {
+      background-color: #c0c0c0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="section">Section 1</div>
+    <div class="section">Section 2</div>
+    <div class="section">Section 3</div>
+  </div>
+
+  <script>
+    let currentSection = 0;
+    const sections = document.querySelectorAll('.section');
+    const totalSections = sections.length;
+    const container = document.querySelector('.container'); // Get container
+
+    // Listen to the scroll event
+    window.addEventListener('wheel', (event) => {
+      if (event.deltaY > 0) {
+        // Scroll down
+        if (currentSection < totalSections - 1) {
+          currentSection++;
+        }
+      } else {
+        // Scroll up
+        if (currentSection > 0) {
+          currentSection--;
+        }
+      }
+      scrollToSection(currentSection);
+    });
+
+    // Smooth scrolling function
+    function scrollToSection(sectionIndex) {
+      const offset = sectionIndex * window.innerHeight;
+      container.style.transform = `translateY(-${offset}px)`; // Apply transform to the container
+    }
+  </script>
+
+</body>
+
+</html>

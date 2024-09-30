@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Trip Sans Ultra';
+    src: url('../fonts/TripSans-Ultra.eot');
+    src: local('Trip Sans Ultra'), local('TripSans-Ultra'),
+        url('../fonts/TripSans-Ultra.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TripSans-Ultra.woff2') format('woff2'),
+        url('../fonts/TripSans-Ultra.woff') format('woff'),
+        url('../fonts/TripSans-Ultra.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Trip Sans';
+    src: url('../fonts/TripSans-Bold.eot');
+    src: local('Trip Sans Bold'), local('TripSans-Bold'),
+        url('../fonts/TripSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TripSans-Bold.woff2') format('woff2'),
+        url('../fonts/TripSans-Bold.woff') format('woff'),
+        url('../fonts/TripSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Trip Sans';
+    src: url('../fonts/TripSans-Medium.eot');
+    src: local('Trip Sans Medium'), local('TripSans-Medium'),
+        url('../fonts/TripSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TripSans-Medium.woff2') format('woff2'),
+        url('../fonts/TripSans-Medium.woff') format('woff'),
+        url('../fonts/TripSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Trip Sans Mono';
+    src: url('../fonts/TripSansMono-Regular.eot');
+    src: local('Trip Sans Mono Regular'), local('TripSansMono-Regular'),
+        url('../fonts/TripSansMono-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TripSansMono-Regular.woff2') format('woff2'),
+        url('../fonts/TripSansMono-Regular.woff') format('woff'),
+        url('../fonts/TripSansMono-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Trip Sans';
+    src: url('../fonts/TripSans-Regular.eot');
+    src: local('Trip Sans Regular'), local('TripSans-Regular'),
+        url('../fonts/TripSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TripSans-Regular.woff2') format('woff2'),
+        url('../fonts/TripSans-Regular.woff') format('woff'),
+        url('../fonts/TripSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
